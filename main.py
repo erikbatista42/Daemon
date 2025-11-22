@@ -5,7 +5,6 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 import os
 
-
 load_dotenv()
 
 
@@ -27,3 +26,5 @@ invoked = agent.invoke(
 
 for message in invoked["messages"]:
     print(f"\n[{message.type.upper()}]: {message.content}")
+
+# Messed with Slack integration but not ready yet to build it with MVP. Going to do something more simpler first
