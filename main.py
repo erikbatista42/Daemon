@@ -7,7 +7,6 @@ import os
 
 load_dotenv()
 
-
 def get_weather(city: str) -> str:
     """Get weather for a given city."""
     return f"It's always sunny in {city}!"
@@ -28,3 +27,5 @@ for message in invoked["messages"]:
     print(f"\n[{message.type.upper()}]: {message.content}")
 
 # Messed with Slack integration but not ready yet to build it with MVP. Going to do something more simpler first
+
+
